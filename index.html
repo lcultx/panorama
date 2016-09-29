@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>ThreeJS 360 Panorama</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+      }
+      
+      #ctrl {
+         z-index: 1000;
+         position: absolute;
+         top: 0;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div id="demo">
+      <div id="log"></div>
+   </div>
+
+   <div id="ctrl">
+      <button onClick="openVRMode()">vr</button>
+      <button onClick="closeVRMode()">normal</button>
+   </div>
+
+   <!--    Load three.js from CDN
+                <script src="http://threejs.org/build/three.min.js"></script>
+                or, for reliability of this demo just use the local copy -->
+
+   <script src="libs/threejs/build/three.min.js"></script>
+   <script src="js/StereoEffect.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
